@@ -1,21 +1,19 @@
-# nssbw
+# 新的 SSB-WEB
 
-> A Vue.js project
+> SSB-CTF 的 前端页面
 
-## Build Setup
+## 编译 与 安装
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 开启服务localhost:8080
 npm run dev
 
-# build for production with minification
+# 编译
 npm run build
 
-# build for production and view the bundle analyzer report
+# 编译 -不生成分析图
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
