@@ -1,0 +1,107 @@
+/* 覆盖element-UI 默认样式 */
+
+/* input 样式 */
+.el-input__inner {
+  border-radius: 0.5rem;
+  height: 42px;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #606266;
+}
+
+/* Login 样式 */
+
+.Login {
+  width: 450px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 5px 11px 20px 20px rgb(62 85 120 / 5%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.comImg {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.comImg>img {
+  width: 100%;
+}
+
+/* 登录组件 */
+#login {
+  /* background-color: red; */
+}
+
+#login p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#login p>span {
+  color: #666666;
+}
+
+#login p>span a {
+  color: #666666;
+}
+
+#login p>span a:hover {
+  color: #000;
+}
+
+/* 按钮样式 */
+.fgbutton {
+  width: 100%;
+  height: 40px;
+  /* margin: 20px 0px; */
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: #0081FF;
+}
+
+
+/* 注册组件 */
+#register {}
+
+.title {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #505050;
+}
+.linklg {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+}
+.linklg>hr{
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  background-color: #e6e6e6;
+}
+.linklg>a{
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.linklg>a:hover{
+  border: 1px solid #AFB8BD;
+  background-color: #AFB8BD;
+}
