@@ -1,0 +1,66 @@
+body {
+  background-color: #F8FAFB;
+}
+/* 临时高度 */
+.Home {
+  height: 1000px;
+}
+.Home>div:nth-child(1) {
+  vertical-align: middle;
+  box-shadow: 0 5px 10px -10px rgba(0,0,0,0.4);
+  background-color: white;
+}
+.Home>div:nth-child(2) {
+  /*background-color: red;*/
+}
+
+#herder {
+  width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .Avatar {
+  width: 150px;
+}
+.features {
+  width: 930px;
+}
+.logo {
+  line-height: 75px;
+}
+.logo img {
+  width: 150px;
+}
+.logo a{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features ul{
+  display: flex;
+}
+.features li {
+  color: #666666;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.features li:nth-child(1){
+  color: white;
+  background-color: #0081FF;
+}
+.features li:hover {
+  color: white;
+  background-color: #0081FF;
+}
+
+.Avatar {
+  line-height: 75px;
+}
