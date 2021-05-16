@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import '@/assets/styles/Login.css'
+import '@/assets/styles/User.css'
 export default {
 }
 </script>

@@ -1,22 +1,20 @@
 <template>
   <div class="Home">
-    {{ this.$store.state.showFooter }} <br>
-    {{ this.$store.state.changableNum }}
-    <button @click="add()">增加</button>
+    <div></div>
+    <div></div>
   </div>
 </template>
 
 <script>
+import Header from './home/heder'
 export default {
   data () {
     return {
-
     }
   },
-  methods: {
-    add () {
-      this.$store.state.changableNum++
-    }
+  methods: {},
+  components: {
+    Header
   }
 }
 </script>
