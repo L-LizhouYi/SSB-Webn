@@ -16,7 +16,7 @@ export default new Router({
       path: '/user',
       name: 'user',
       component: resolve => {
-        require(['@/pages/Login'], resolve)
+        require(['@/pages/User'], resolve)
       },
       children: [
         {

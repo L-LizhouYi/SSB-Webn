@@ -25,7 +25,8 @@
 
 <script>
 import { rulesUsername, rulesPassword } from '@/assets/js/rules.js'
-import * as API from '@/api/v1.js'
+import {userMe, userLogin} from '../../api/v1'
+// import * as API from '@/api/v1.js'
 export default {
   data () {
     return {
@@ -43,7 +44,8 @@ export default {
     }
   },
   created () {
-    API.userMe().then(request => {
+    // 检查JWT 成功转跳主页
+    userMe().then(request => {
       if (request.code === 0) {
         this.$router.push('/home')
       }
@@ -58,7 +60,7 @@ export default {
       } else {
         localStorage.setItem('autologin', null)
       }
-      API.userLogin(this.LoginForm).then(response => {
+      userLogin(this.LoginForm).then(response => {
         if (response.code === 0) {
           // 登录成功
           localStorage.setItem('token', response.data.token_type + ' ' + response.data.access_token)
