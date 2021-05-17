@@ -86,7 +86,31 @@
 <!--      待定-->
       <div></div>
     </div>
-    <div class="ixr"></div>
+    <div class="ixr">
+<!--      签到-->
+      <div>签到</div>
+<!--      投稿入口-->
+      <div>
+        <h5>投稿入口</h5>
+        <a href="">投稿题目</a><br>
+        <a href="">投稿WP</a>
+      </div>
+<!--      最新WP-->
+      <div>
+        <h4>最新WP</h4>
+      </div>
+<!--      友情链接-->
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><img src="img/unlink.png"><a>旧平台备份</a></li>
+          <hr>
+          <li><img src="img/favicon.ico"><a>Bugku论坛</a></li>
+          <hr/>
+          <li><img src="img/favicon.png"><a>CTF论剑场</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 

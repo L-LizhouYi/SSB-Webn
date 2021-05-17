@@ -16,16 +16,41 @@
       </ul>
     </div>
     <div class="Avatar">
-      test
+      <div id="Avatar1" v-show="!jwt">
+        <router-link :to="{name: 'login'}" >登录</router-link>
+        <router-link :to="{name: 'register'}">注册</router-link>
+      </div>
+      <div id="Avatar2" v-show="jwt" @click="drawer = true">
+        <span>{{ this.userInfo.name }}</span>
+        <span><img src="" alt=""></span>
+      </div>
     </div>
+<!--    用户设置抽屉     -->
+    <el-drawer
+      title="我是标题"
+      :visible.sync="drawer"
+      :with-header="false">
+      <span>我来啦!</span>
+    </el-drawer>
   </div>
 </template>
 
 <script>
+import {userMe} from '../../api/v1'
 export default {
   name: 'heder',
   data () {
     return {
+      // 抽屉
+      drawer: false,
+      // Jtw 头像区域
+      jwt: false,
+      // 用户名和头像
+      userInfo: {
+        name: '',
+        Avatar: ''
+      },
+      // logo
       logoInfo: {
         url: 'https://www.baidu.com',
         imgUrl: 'https://ctf.bugku.com/upload/20201117/61f4c2f2718ee53b7ff90ef743263143.png'
@@ -77,6 +102,23 @@ export default {
           name: '更多'
         }
       ]
+    }
+  },
+  created () {
+    this.me()
+  },
+  methods: {
+    // 检查登录
+    me () {
+      userMe().then(reponse => {
+        console.log(reponse)
+        if (reponse.code === 0) {
+          this.jwt = true
+          this.userInfo.name = reponse.data.username
+        } else {
+          localStorage.setItem('token', '')
+        }
+      })
     }
   }
 }

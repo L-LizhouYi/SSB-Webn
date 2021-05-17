@@ -17,7 +17,10 @@ export default {
     return {
     }
   },
-  methods: {},
+  methods: {
+    // 判断用户是否登录, 更改显示区域, 加载榜单等信息 完成后 显示页面
+    loging () {}
+  },
   components: {
     Header
   }

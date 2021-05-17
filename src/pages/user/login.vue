@@ -72,7 +72,7 @@ export default {
           this.ButLoading = false
           setTimeout(() => {
             this.$router.push('home')
-            // window.location.reload()
+            window.location.reload()
           }, 1000)
         } else {
           this.$notify.error({
