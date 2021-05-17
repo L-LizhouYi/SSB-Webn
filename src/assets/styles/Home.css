@@ -12,11 +12,15 @@ body {
 }
 .Home>div:nth-child(2) {
   /*background-color: red;*/
+
+}
+
+#herder, #index {
+  width: 1230px;
+  margin: 0 auto;
 }
 
 #herder {
-  width: 1230px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -49,7 +53,6 @@ body {
   color: #666666;
   padding: 6px 15px;
   border-radius: 8px;
-  /*margin: 0 5px;*/
   cursor: pointer;
   font-size: 15px;
 }
@@ -64,4 +67,92 @@ body {
 
 .Avatar {
   line-height: 75px;
+}
+
+#index {
+  height: 1000px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ixl {
+  width: 900px;
+  height: 100px;
+}
+.ixr {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+}
+.ixl>div, .ixr>div{
+  background-color: #FEFEFE;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px 0 rgba(0,0,0,0.1);
+}
+.ixl>div:nth-child(n+2), .ixr>div:nth-child(n+2){
+  margin-top: 20px;
+}
+
+.ixl>div:nth-child(1) {
+
+}
+.ixl>div:nth-child(1) img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 广播 */
+.ixl>div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ixl>div:nth-child(2) img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.ixl>div:nth-child(2) div{
+  width: 850px;
+  line-height: 50px;
+}
+.ixl>div:nth-child(2) a{
+  color: red;
+}
+.ixl>div:nth-child(2) span {
+  margin-left: 10px;
+  color: black;
+  font-size: 12px;
+}
+
+/* 排行榜 */
+#Leaderboard {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eceeef;
+}
+#Leaderboard>div {
+  width: 435px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #FEFEFE;
+  /*box-shadow: 0 4px 25px 0 rgba(0,0,0,0.1);*/
+  box-sizing: border-box;
+  padding: 20px ;
+  text-align: center;
+}
+#Leaderboard>div h3{
+  margin: 10px 0;
+  color: #505050;
+}
+/*个人榜*/
+#Leaderboard>div:nth-child(1){}
+/*战队榜*/
+#Leaderboard>div:nth-child(2){}
+
+
+.ixl>div:nth-child(4) {
+  height: 200px;
 }

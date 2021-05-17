@@ -10,7 +10,18 @@ export default new Router({
       name: 'home',
       component: resolve => {
         require(['@/pages/Home'], resolve)
-      }
+      },
+      children: [
+        {
+          path: '/',
+          name: 'index',
+          component: resolve => {
+            require(['@/pages/home/index'], resolve)
+          }
+        }
+        //
+      ],
+      redirect: '/home/'
     },
     {
       path: '/user',
