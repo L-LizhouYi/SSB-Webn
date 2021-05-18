@@ -1,5 +1,5 @@
 <template>
-  <div id="index">
+  <div id="index" class="Centered_globally">
     <div class="ixl">
 <!--      轮播图-->
       <div>
@@ -88,26 +88,32 @@
     </div>
     <div class="ixr">
 <!--      签到-->
-      <div>签到</div>
+      <div id="signin">签到
+        <div></div>
+        <div></div>
+      </div>
 <!--      投稿入口-->
-      <div>
+      <div id="draft">
         <h5>投稿入口</h5>
         <a href="">投稿题目</a><br>
         <a href="">投稿WP</a>
       </div>
 <!--      最新WP-->
       <div>
-        <h4>最新WP</h4>
+        <h4 class="h4">最新WP</h4>
       </div>
 <!--      友情链接-->
-      <div>
-        <h4>友情链接</h4>
+      <div id="Links">
+        <h4 class="h4">友情链接</h4>
         <ul>
-          <li><img src="img/unlink.png"><a>旧平台备份</a></li>
-          <hr>
-          <li><img src="img/favicon.ico"><a>Bugku论坛</a></li>
-          <hr/>
-          <li><img src="img/favicon.png"><a>CTF论剑场</a></li>
+          <li>
+            <img src="https://ctf.bugku.com/static/images/unlink.png" alt="">
+            <a href=""><span>这里是友情链接</span></a>
+          </li>
+          <li>
+            <img src="https://ctf.bugku.com/static/images/unlink.png" alt="">
+            <a href=""><span>test</span></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -149,7 +155,11 @@ export default {
           {rank: 9, name: 'test', minute: 200},
           {rank: 10, name: 'test', minute: 200}
         ],
-        Clan: []
+        Clan: [],
+        // 友情链接
+        Links: [
+          {url: 'https://test.com', title: 'CTF论剑场'}
+        ]
       }
     }
   }

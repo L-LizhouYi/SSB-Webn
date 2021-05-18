@@ -9,7 +9,7 @@ const userRegister = (form) => axios.post('/api/user/register', form).then(respo
 // 验证邮箱 或 用户是否注册
 const userVreg = (form) => axios.post('/api/user/verify_registered', form).then(response => response.data)
 // 注销登录
-const userLogout = () => axios.get('/api/user/me', {headers: header}).then(response => response.data)
+const userLogout = () => axios.get('/api/user/logout', {headers: header}).then(response => response.data)
 export {
   userLogin,
   userMe,

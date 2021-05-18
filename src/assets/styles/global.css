@@ -30,3 +30,11 @@ li {
 .el-carousel__item {
   background-color: #FEFEFE;
 }
+
+
+/*  全局居中样式  */
+.Centered_globally{
+  width: 1230px;
+  margin: 0 auto;
+  padding: 30px 0;
+}

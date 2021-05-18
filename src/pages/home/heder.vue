@@ -10,7 +10,7 @@
         <router-link
           v-for="item in features"
           :key="item.name"
-          to="item.view"
+          :to="item.view"
           tag="li">{{ item.name }}
         </router-link>
       </ul>
@@ -27,16 +27,29 @@
     </div>
 <!--    用户设置抽屉     -->
     <el-drawer
-      title="我是标题"
+      custom-class="drawer"
+      size="330px"
       :visible.sync="drawer"
       :with-header="false">
-      <span>我来啦!</span>
+<!--      头像区域-->
+      <div>1</div>
+<!--      功能区域-->
+      <div>
+        <ul>
+          <li>个人中心</li>
+          <li>战队设置</li>
+          <li>用户设置</li>
+          <li>我的消息</li>
+          <li>任务中心</li>
+          <li @click="logout">退出登录</li>
+        </ul>
+      </div>
     </el-drawer>
   </div>
 </template>
 
 <script>
-import {userMe} from '../../api/v1'
+import {userMe, userLogout} from '../../api/v1'
 export default {
   name: 'heder',
   data () {
@@ -58,11 +71,11 @@ export default {
       // 功能
       features: [
         {
-          view: '',
+          view: {name: 'home'},
           name: '首页'
         },
         {
-          view: '',
+          view: {name: 'topic'},
           name: '题目'
         },
         {
@@ -111,13 +124,21 @@ export default {
     // 检查登录
     me () {
       userMe().then(reponse => {
-        console.log(reponse)
         if (reponse.code === 0) {
           this.jwt = true
           this.userInfo.name = reponse.data.username
         } else {
           localStorage.setItem('token', '')
         }
+      })
+    },
+    // 退出登录
+    logout () {
+      userLogout().then(response => {
+        localStorage.setItem('token', '')
+        setTimeout(() => {
+          this.$router.push('/user')
+        }, 1000)
       })
     }
   }

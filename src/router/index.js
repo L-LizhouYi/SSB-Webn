@@ -18,6 +18,13 @@ export default new Router({
           component: resolve => {
             require(['@/pages/home/index'], resolve)
           }
+        },
+        {
+          path: 'topic',
+          name: 'topic',
+          component: resolve => {
+            require(['@/pages/home/topic'], resolve)
+          }
         }
         //
       ],

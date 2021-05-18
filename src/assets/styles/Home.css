@@ -3,7 +3,7 @@ body {
 }
 /* 临时高度 */
 .Home {
-  height: 1000px;
+  /*height: 1000px;*/
 }
 .Home>div:nth-child(1) {
   vertical-align: middle;
@@ -15,12 +15,9 @@ body {
 
 }
 
-#herder, #index {
+#herder {
   width: 1230px;
   margin: 0 auto;
-}
-
-#herder {
   display: flex;
   justify-content: space-between;
 }
@@ -107,7 +104,6 @@ body {
 /*----------------------------*/
 #index {
   height: 1000px;
-  padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -194,21 +190,24 @@ body {
 }
 
 
-.ixr>div:nth-child(n+2){
+.ixr>div {
   padding: 20px 24px 24px 24px;
 }
-
-
-.ixr>div:nth-child(2) h5{
+/*  签到 */
+#signin {
+  background: linear-gradient(230deg, #aa66cc, #ca9fdf) !important;
+}
+/* 投稿 */
+#draft {
+  text-align: center;
+}
+#draft h5{
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 17px;
   color: #505050;
 }
-.ixr>div:nth-child(2) {
-  text-align: center;
-}
-.ixr>div:nth-child(2) a{
+#draft a{
   display: inline-block;
   width: 200px;
   height: 20px;
@@ -219,4 +218,46 @@ body {
   color: white;
   font-size: 15px;
   font-weight: 600;
+}
+
+.h4 {
+  margin-bottom: 40px;
+  color: #505050;
+}
+/* 最新WP */
+#newWp {}
+/* 友情链接 */
+#Links {}
+#Links li {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  display: flex;
+}
+#Links li:last-child {
+  border: none;
+  padding: 0;
+}
+#Links li img {
+  width: 20px;
+  height: 20px;
+}
+#Links li span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* ----- 抽屉样式 -----*/
+
+.drawer{}
+.drawer div:first-of-type {
+  height: 180px;
+  background-color: red;
+}
+.drawer div:last-child {
+  padding: 20px;
+}
+.drawer div:last-child li{
+  margin: 12px 0;
 }

@@ -1,0 +1,94 @@
+.clasif {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #505050;
+}
+.clasif span {
+  margin-right: 20px;
+}
+.clasif li {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: red;
+}
+
+#timu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+#timu > div {
+  width: 23%;
+  height: 190px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+#timu > div:hover {
+  transform: scale(1.1);
+}
+#timu > div:hover .tmtit {
+  color: black;
+}
+/* 如果最后一行是3个元素 */
+.tmlist:last-child:nth-child(4n - 1) {
+  margin-right: calc(23% + 8% / 3);
+}
+/* 如果最后一行是2个元素 */
+.tmlist:last-child:nth-child(4n - 2) {
+  margin-right: calc(560px + 16% / 3);
+}
+
+.tmlist>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+.tmlist>a>h4{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.text>div>h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.text>div>span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.text1 {
+  color: #33b5e5 !important;
+}
+.text2 {
+  color: #28c76f !important;
+}
+.text3 {
+  color: #ff9f43 !important;
+}
+
+.fenlei {
+  float: left;
+  color: #a7abc3 !important;
+  font-size: 12px;
+  font-weight: 400;
+}
