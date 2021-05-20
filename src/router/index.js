@@ -25,6 +25,13 @@ export default new Router({
           component: resolve => {
             require(['@/pages/home/topic'], resolve)
           }
+        },
+        {
+          path: 'answer',
+          name: 'answer',
+          component: resolve => {
+            require(['@/pages/home/answer'], resolve)
+          }
         }
         //
       ],

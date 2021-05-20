@@ -1,0 +1,141 @@
+/* 答题页面的CSS  */
+
+/* 返回按钮 */
+#return {
+}
+#return p{
+  display: inline-block;
+  padding: 8px 22px;
+  border-radius: 25px;
+  line-height: 20px;
+  border: 1px solid #0081FF;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0081FF;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#return p:hover {
+  background-color: #0081FF;
+  color: white;
+}
+
+/* 主体区域 */
+#dtqy {
+  width: 100%;
+  height: 1000px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+#dtqy>div>div {
+  border-radius: 8px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 24px;
+}
+.dtleft {
+  width: 64%;
+  height: 100px;
+}
+.dtright {
+  width: 34%;
+  height: 100px;
+}
+/* 答题区域 */
+.tmxx >div{
+  margin-bottom: 20px;
+}
+.dttit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.dttit>div:nth-child(1) {
+  display: flex;
+}
+.dttit>div:nth-child(1) h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.dttit>div:nth-child(1) span {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
+  background-color: #0081FF;
+}
+
+.dttit>div:nth-child(2)>span {
+  font-size: 15px;
+  font-weight: 400;
+}
+.dttit>div:nth-child(2)>span:nth-child(1){
+  color: #28c76f;
+}
+.dttit>div:nth-child(2)>span:nth-child(2){
+  color: #FF9F43;
+}
+.dttit>div:nth-child(2)>span>span{
+  font-size: 20px;
+  font-weight: 400;
+}
+.tmxx>div:nth-child(n+2) {
+  color: #A7ABC3;
+}
+.tmxx>div:nth-child(n+2) span:nth-child(1) {
+  display: inline-block;
+  width: 60px;
+  text-align-last: justify;
+  font-size: 15px;
+  font-weight: 400;
+}
+.tmxx>div:nth-child(n+2) span:nth-child(2) {
+  margin-left: 10px;
+  color: #505050;
+}
+.tmxx>div a{
+  margin-left: 10px;
+  color: #0081FF;
+}
+.tmxx>div p {
+  margin-top: 5px;
+  color: black;
+}
+
+#tFlag {
+  width: 80px;
+  text-align: center;
+  margin: auto;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #0081FF;
+  cursor: pointer;
+}
+#form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#forms>div{
+  display: flex;
+}
+#forms>div input {
+  width: 500px;
+  border-right: none;
+  padding: 2px;
+  padding-left: 30px;
+  border-radius: 25px 0 0 25px;
+}
+#forms>div button {
+  border-right: none;
+  border-radius: 0 25px 25px 0;
+}
